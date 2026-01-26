@@ -4,7 +4,7 @@ const Hero = () => {
       <img
         src="/img/hero.jpg"
         alt=""
-        className="max-w-[1600px] max-h-[300px] w-full rounded-2xl"
+        className="max-w-[1500px] max-h-[330px] w-full rounded-md"
       />
     </div>
   );

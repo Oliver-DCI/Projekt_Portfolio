@@ -1,6 +1,6 @@
 const ProfileMeta = () => {
   return (
-    <div className="rounded-xl bg-white w-80 p-8 shadow-lg text-center relative -top-60 -right-30">
+    <div className="rounded-md bg-white w-80 p-8 shadow-lg text-center relative -top-70 -right-45">
       
       {/* Image */}
       <img
