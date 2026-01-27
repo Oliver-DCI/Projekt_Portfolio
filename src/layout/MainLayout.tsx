@@ -5,15 +5,15 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout = () => {
   return (
-    <div className="min-h-screen w-full bg-gray-50">
+    <div className="bg-gray-50 min-h-screen">
 
-      {/* HEADER FIXIERT, HINTERGRUND TRANSPARENT (erbt bg-gray-50) */}
-      <div className="fixed top-0 left-0 w-full z-50">
+      {/* HEADER FIXIERT */}
+      <div className="fixed top-0 left-0 w-full z-50 bg-gray-50 shadow-sm">
         <Header />
       </div>
 
-      {/* HERO + PROFILEMETA FIXIERT, KEIN EIGENER HINTERGRUND */}
-      <div className="fixed top-[65px] left-0 w-full z-40">
+      {/* HERO-BEREICH FIXIERT + GRAUER HINTERGRUND */}
+      <div className="fixed top-[65px] left-0 w-full z-40 bg-gray-50 h-[430px]">
         <div className="mx-38 relative">
 
           {/* Hero direkt unter dem Header */}
@@ -27,7 +27,7 @@ const MainLayout = () => {
         </div>
       </div>
 
-      {/* MAIN – startet deutlich unter Hero + ProfileMeta, Abstand bleibt mt-[600px] */}
+      {/* MAIN – startet deutlich unter Hero + ProfileMeta */}
       <main className="mx-38 mt-[600px] mb-20">
         <Outlet />
       </main>

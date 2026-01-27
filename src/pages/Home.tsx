@@ -45,18 +45,24 @@ const Home = () => {
     <div className="w-full py-10">
       <div className="flex flex-row gap-6">
 
-        {/* Linke Spalte */}
+        {/* Linke Spalte – bleibt fixiert */}
         <div
           className="
-            flex-[0.9] p-6 bg-white rounded-md shadow-xl shadow-blue-300/40 
-            flex flex-col gap-4 
+            flex-[0.9] 
+            p-6 
+            bg-white 
+            rounded-md 
+            shadow-xl shadow-blue-300/40 
+            flex flex-col 
+            gap-4 
             h-[380px] 
             overflow-hidden
+            sticky 
+            top-[120px]
           "
         >
           <h2 className="text-lg font-semibold">Skills</h2>
 
-          {/* Skill-Karten Grid */}
           <div className="grid grid-cols-2 gap-3 mt-1">
             {skills.map((skill) => (
               <div
@@ -76,10 +82,9 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Rechte Spalte */}
+        {/* Rechte Spalte – scrollt normal */}
         <div className="flex-[3] flex flex-col gap-10">
 
-          {/* Suchfeld */}
           <div
             className="
               bg-white p-5 rounded-md shadow-xl shadow-blue-300/40 
@@ -111,7 +116,6 @@ const Home = () => {
             />
           </div>
 
-          {/* Projektkarten */}
           {filteredProjects.map((projekt) => (
             <div
               key={projekt.id}
@@ -122,17 +126,14 @@ const Home = () => {
                 hover:scale-[1.02] hover:shadow-blue-400/60
               "
             >
-              {/* Bild */}
               <img
                 src={`/${projekt.imgUrl}.jpg`}
                 alt={projekt.title}
                 className="w-40 h-40 rounded-md object-cover bg-slate-200"
               />
 
-              {/* Rechte Seite */}
               <div className="flex flex-col justify-between w-full h-full py-1">
 
-                {/* Titel + Beschreibung */}
                 <div>
                   <h2 className="text-base font-semibold pb-1">
                     {projekt.title}
@@ -142,7 +143,6 @@ const Home = () => {
                   </p>
                 </div>
 
-                {/* Button fix unten */}
                 <div className="flex flex-row gap-2 mt-3">
                   <button className="border border-slate-300 text-black px-2 py-1 text-xs rounded-md hover:bg-gray-100 transition">
                     Projekt anzeigen
