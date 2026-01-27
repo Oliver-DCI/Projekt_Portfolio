@@ -23,7 +23,7 @@ const MainLayout = () => {
         </div>
       </div>
 
-      <main className="mx-38 mt-42">
+      <main className="mx-38 mt-38">
         <Outlet />
       </main>
 
