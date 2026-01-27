@@ -1,6 +1,19 @@
 import { useState } from "react";
 import { projekte } from "../data/data";
 
+const skills = [
+  "React",
+  "TypeScript",
+  "JavaScript",
+  "Node.js",
+  "Next.js",
+  "HTML",
+  "CSS",
+  "Tailwind",
+  "Git",
+  "Responsive Design",
+];
+
 const Home = () => {
   const [search, setSearch] = useState("");
 
@@ -33,12 +46,38 @@ const Home = () => {
       <div className="flex flex-row gap-6">
 
         {/* Linke Spalte */}
-        <div className="flex-[0.9] p-6 bg-white rounded-md shadow-sm">
-          olli spalten 1
+        <div
+          className="
+            flex-[0.9] p-6 bg-white rounded-md shadow-xl shadow-blue-300/40 
+            flex flex-col gap-4 
+            h-[380px] 
+            overflow-hidden
+          "
+        >
+          <h2 className="text-lg font-semibold">Skills</h2>
+
+          {/* Skill-Karten Grid */}
+          <div className="grid grid-cols-2 gap-3 mt-1">
+            {skills.map((skill) => (
+              <div
+                key={skill}
+                className="
+                  bg-white border border-blue-200 
+                  rounded-md p-3 text-center text-sm font-medium
+                  shadow-sm
+                  transform transition-all duration-300
+                  hover:scale-[1.03] hover:shadow-blue-400/60 hover:border-blue-400
+                  cursor-default
+                "
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Rechte Spalte */}
-        <div className="flex-[3] flex flex-col gap-8">
+        <div className="flex-[3] flex flex-col gap-10">
 
           {/* Suchfeld */}
           <div
