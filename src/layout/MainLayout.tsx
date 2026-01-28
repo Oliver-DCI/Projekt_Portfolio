@@ -13,7 +13,7 @@ const MainLayout = () => {
       </div>
 
       {/* HERO-BEREICH FIXIERT + GRAUER HINTERGRUND */}
-      <div className="fixed top-[65px] left-0 w-full z-40 bg-gray-50 h-[430px]">
+      <div className="fixed top-[65px] left-0 w-full z-40 bg-gray-50 h-[480px]">
         <div className="mx-38 relative">
 
           {/* Hero direkt unter dem Header */}
