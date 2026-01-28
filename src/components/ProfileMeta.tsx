@@ -4,23 +4,19 @@ const ProfileMeta = () => {
       <img
         src="/img/profile_face.jpg"
         alt="Profile"
-        className="w-32 h-32 rounded-full object-cover mx-auto"
+        className="w-32 h-32 mt-5 rounded-full object-cover mx-auto"
       />
 
-      <h1 className="text-2xl font-bold mt-4">oliver pfaff</h1>
-      <span className="text-sm text-gray-700 font-normal">
+      <h1 className="text-2xl font-bold mt-5">oliver pfaff</h1>
+      <span className="text-sm text-blue-900 font-normal">
         Web Developer & Web Designer
       </span>
-
-      <button className="mt-5 bg-blue-600 text-white px-6 py-3 text-sm rounded-md hover:bg-blue-700 transition w-full">
-        Folgen
-      </button>
 
       <p className="mt-5 text-gray-700 font-normal">
         Frankfurt Am Main, Germany
       </p>
 
-      <button className="mt-10 border border-gray-300 text-black px-6 py-3 text-sm rounded-md hover:bg-gray-100 transition w-full flex items-center justify-center gap-2">
+      <button className="mt-15 border bg-blue-950 text-white border-gray-300 px-6 py-3 text-sm rounded-md hover:bg-blue-700 transition w-full flex items-center justify-center gap-2">
         Nachricht senden
       </button>
     </div>

@@ -50,7 +50,7 @@ const Home = () => {
           className="
             flex-[0.9] 
             p-6 
-            bg-white 
+            bg-blue-950
             rounded-md 
             shadow-xl shadow-blue-300/40 
             flex flex-col 
@@ -59,9 +59,11 @@ const Home = () => {
             overflow-hidden
             sticky 
             top-[120px]
+            transform transition-all duration-300 
+            hover:scale-[1.02]
           "
         >
-          <h2 className="text-lg font-semibold">Skills</h2>
+          <h2 className="text-lg text-slate-50 font-semibold">Skills</h2>
 
           <div className="grid grid-cols-2 gap-3 mt-1">
             {skills.map((skill) => (
@@ -72,7 +74,6 @@ const Home = () => {
                   rounded-md p-3 text-center text-sm font-medium
                   shadow-sm
                   transform transition-all duration-300
-                  hover:scale-[1.03] hover:shadow-blue-400/60 hover:border-blue-400
                   cursor-default
                 "
               >
@@ -87,19 +88,19 @@ const Home = () => {
 
           <div
             className="
-              bg-white p-5 rounded-md shadow-xl shadow-blue-300/40 
+              bg-blue-950 p-5 rounded-md shadow-xl shadow-blue-300/40 
               flex flex-col gap-4 
               transform transition-all duration-300 
               hover:scale-[1.02] hover:shadow-blue-400/60
             "
           >
-            <h2 className="text-lg font-semibold">Projekte suchen</h2>
+            <h2 className="text-lg text-white font-semibold">Projekte suchen</h2>
 
             <input
               type="text"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="🔍  Suche nach React, TypeScript, UI..."
+              placeholder="Projekte druchsuchen z.B nach React, TypeScript, UI..."
               className="
                 border border-blue-300 
                 rounded-md 
@@ -144,7 +145,7 @@ const Home = () => {
                 </div>
 
                 <div className="flex flex-row gap-2 mt-3">
-                  <button className="border border-slate-300 text-black px-2 py-1 text-xs rounded-md hover:bg-gray-100 transition">
+                  <button className="bg-blue-950 border border-slate-300 text-white px-3 py-2 text-xs rounded-md hover:bg-blue-700 transition">
                     Projekt anzeigen
                   </button>
                 </div>

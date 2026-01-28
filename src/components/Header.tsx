@@ -15,7 +15,7 @@ const Header = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="flex flex-col text-2xl font-bold tracking-wide hover:text-blue-600 transition-colors"
+            className="flex flex-col text-2xl font-bold tracking-wide text-blue-950 hover:text-blue-700 transition-colors"
           >
             VISION_DESIGN
           </Link>
@@ -24,16 +24,16 @@ const Header = () => {
           <nav className="flex gap-8 text-lg">
             <button
               onClick={() => setOpenAbout(true)}
-              className="hover:text-blue-600 transition-colors"
+              className="text-blue-950 hover:text-blue-700 transition-colors"
             >
-              About
+              Über mich
             </button>
 
             <button
               onClick={() => setOpenContact(true)}
-              className="hover:text-blue-600 transition-colors"
+              className="text-blue-950 hover:text-blue-700  transition-colors"
             >
-              Contact
+              Kontakt
             </button>
           </nav>
 

@@ -8,7 +8,7 @@ const MainLayout = () => {
     <div className="bg-gray-50 min-h-screen">
 
       {/* HEADER FIXIERT */}
-      <div className="fixed top-0 left-0 w-full z-50 bg-gray-50 shadow-sm">
+      <div className="fixed top-0 left-0 w-full z-50 bg-gray-50">
         <Header />
       </div>
 
@@ -20,7 +20,7 @@ const MainLayout = () => {
           <Hero />
 
           {/* ProfileMeta über dem Hero */}
-          <div className="absolute -bottom-37 left-11">
+          <div className="absolute -bottom-32 left-11">
             <ProfileMeta />
           </div>
 
@@ -28,7 +28,7 @@ const MainLayout = () => {
       </div>
 
       {/* MAIN – startet deutlich unter Hero + ProfileMeta */}
-      <main className="mx-38 mt-[600px] mb-20">
+      <main className="mx-38 mt-[550px] mb-20">
         <Outlet />
       </main>
 
