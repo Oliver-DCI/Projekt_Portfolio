@@ -1,6 +1,14 @@
 const ProfileMeta = () => {
   return (
-    <div className="rounded-md bg-white w-80 p-8 shadow-xl shadow-blue-300/40 text-center">
+    <div
+      className="
+        rounded-md bg-white w-80 p-8 
+        shadow-md shadow-blue-300/30 
+        text-center
+        transform transition-all duration-300
+        hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-400/60
+      "
+    >
       <img
         src="/img/profile_face.jpg"
         alt="Profile"
@@ -8,7 +16,7 @@ const ProfileMeta = () => {
       />
 
       <h1 className="text-2xl font-bold mt-5">oliver pfaff</h1>
-      <span className="text-sm text-blue-900 font-normal">
+      <span className="text-sm text-blue-950 font-normal">
         Web Developer & Web Designer
       </span>
 
