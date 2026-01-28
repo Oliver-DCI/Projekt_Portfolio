@@ -45,7 +45,7 @@ const Home = () => {
     <div className="w-full h-full py-6">
       <div className="flex flex-row gap-6 h-full">
 
-        {/* Linke Spalte – feste Höhe, scrollt nicht */}
+        {/* Linke Spalte – feste Höhe */}
         <div
           className="
             flex-[0.9] 
@@ -80,10 +80,10 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Rechte Spalte – Inputfeld oben, Karten scrollen separat */}
+        {/* Rechte Spalte */}
         <div className="flex-[3] h-full flex flex-col gap-6 pr-2">
 
-          {/* Inputfeld – NICHT scrollend */}
+          {/* Inputfeld */}
           <div
             className="
               bg-blue-950 p-5 rounded-md shadow-md shadow-blue-300/30
@@ -115,16 +115,17 @@ const Home = () => {
             />
           </div>
 
-          {/* Karten – EINZIGER Scrollcontainer */}
+          {/* Karten – Scrollcontainer */}
           <div className="flex-1 overflow-y-auto scrollbar-none flex flex-col gap-6">
             {filteredProjects.map((projekt) => (
               <div
                 key={projekt.id}
                 className="
-                  flex items-start p-2 gap-4 rounded-md 
+                  flex items-start gap-4 rounded-md 
                   shadow-md shadow-blue-300/30 bg-white
                   transform transition-all duration-300
                   hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-400/60
+                  p-1
                 "
               >
                 <img
@@ -133,7 +134,8 @@ const Home = () => {
                   className="w-40 h-40 rounded-md object-cover bg-slate-200"
                 />
 
-                <div className="flex flex-col justify-between w-full h-full py-1">
+                {/* Inhalt + Button ganz unten */}
+                <div className="flex flex-col justify-between w-full h-full">
 
                   <div>
                     <h2 className="text-base font-semibold pb-1">
