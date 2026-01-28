@@ -5,8 +5,7 @@ const ProfileMeta = () => {
         rounded-md bg-white w-80 p-8 
         shadow-md shadow-blue-300/30 
         text-center
-        transform transition-all duration-300
-        hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-400/60
+        hover:shadow-lg hover:shadow-blue-400/60
       "
     >
       <img

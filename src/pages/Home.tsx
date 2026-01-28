@@ -57,8 +57,7 @@ const Home = () => {
             gap-4 
             h-[380px]
             overflow-hidden
-            transform transition-all duration-300 
-            hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-400/60
+            hover:shadow-lg hover:shadow-blue-400/60
           "
         >
           <h2 className="text-lg text-slate-50 font-semibold">Skills</h2>
@@ -88,8 +87,7 @@ const Home = () => {
             className="
               bg-blue-950 p-5 rounded-md shadow-md shadow-blue-300/30
               flex flex-col gap-4 
-              transform transition-all duration-300 
-              hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-400/60
+              hover:shadow-lg hover:shadow-blue-400/60
             "
           >
             <h2 className="text-lg text-white font-semibold">Projekte suchen</h2>
@@ -123,8 +121,7 @@ const Home = () => {
                 className="
                   flex items-start gap-4 rounded-md 
                   shadow-md shadow-blue-300/30 bg-white
-                  transform transition-all duration-300
-                  hover:scale-[1.02] hover:shadow-lg hover:shadow-blue-400/60
+                  hover:shadow-lg hover:shadow-blue-400/60
                   p-1
                 "
               >

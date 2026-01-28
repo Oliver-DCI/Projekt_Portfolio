@@ -4,7 +4,9 @@
     "": {
       "name": "portfolio",
       "dependencies": {
+        "portfolio": ".",
         "@tailwindcss/vite": "^4.1.18",
+        "portfolio": ".",
         "react": "^19.2.0",
         "react-dom": "^19.2.0",
         "react-router-dom": "^7.12.0",
@@ -471,6 +473,10 @@
 
     "picomatch": ["picomatch@4.0.3", "", {}, "sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q=="],
 
+    "portfolio": ["portfolio@file:", { "dependencies": { "@tailwindcss/vite": "^4.1.18", "portfolio": ".", "react": "^19.2.0", "react-dom": "^19.2.0", "react-router-dom": "^7.12.0", "tailwindcss": "^4.1.18" }, "devDependencies": { "@eslint/js": "^9.39.1", "@types/node": "^24.10.1", "@types/react": "^19.2.5", "@types/react-dom": "^19.2.3", "@vitejs/plugin-react": "^5.1.1", "eslint": "^9.39.1", "eslint-plugin-react-hooks": "^7.0.1", "eslint-plugin-react-refresh": "^0.4.24", "globals": "^16.5.0", "typescript": "~5.9.3", "typescript-eslint": "^8.46.4", "vite": "^7.2.4" } }],
+
+    "portfolio": ["portfolio@file:", { "dependencies": { "@tailwindcss/vite": "^4.1.18", "portfolio": ".", "react": "^19.2.0", "react-dom": "^19.2.0", "react-router-dom": "^7.12.0", "tailwindcss": "^4.1.18" }, "devDependencies": { "@eslint/js": "^9.39.1", "@types/node": "^24.10.1", "@types/react": "^19.2.5", "@types/react-dom": "^19.2.3", "@vitejs/plugin-react": "^5.1.1", "eslint": "^9.39.1", "eslint-plugin-react-hooks": "^7.0.1", "eslint-plugin-react-refresh": "^0.4.24", "globals": "^16.5.0", "typescript": "~5.9.3", "typescript-eslint": "^8.46.4", "vite": "^7.2.4" } }],
+
     "postcss": ["postcss@8.5.6", "", { "dependencies": { "nanoid": "^3.3.11", "picocolors": "^1.1.1", "source-map-js": "^1.2.1" } }, "sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg=="],
 
     "prelude-ls": ["prelude-ls@1.2.1", "", {}, "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="],
@@ -562,6 +568,10 @@
     "@typescript-eslint/typescript-estree/minimatch": ["minimatch@9.0.5", "", { "dependencies": { "brace-expansion": "^2.0.1" } }, "sha512-G6T0ZX48xgozx7587koeX9Ys2NYy6Gmv//P89sEte9V9whIapMNF4idKxnW2QtCcLiTWlb/wfCabAtAFWhhBow=="],
 
     "@typescript-eslint/typescript-estree/semver": ["semver@7.7.3", "", { "bin": { "semver": "bin/semver.js" } }, "sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q=="],
+
+    "portfolio/portfolio": ["portfolio@file:.", {}],
+
+    "portfolio/portfolio": ["portfolio@file:.", {}],
 
     "@typescript-eslint/typescript-estree/minimatch/brace-expansion": ["brace-expansion@2.0.2", "", { "dependencies": { "balanced-match": "^1.0.0" } }, "sha512-Jt0vHyM+jmUBqojB7E1NIYadt0vI0Qxjxd2TErW94wDz+E2LAm5vKMXXwg6ZZBTHPuUlDgQHKXvjGBdfcF1ZDQ=="],
   }
